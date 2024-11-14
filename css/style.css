@@ -1,0 +1,497 @@
+/*Estilo general del body*/
+body {
+    font-family: Arial, sans-serif; /*Fuente*/
+    margin: 0; /*Margen a 0*/
+    padding: 0; /*Padding a 0*/
+    background-color: #B2DDB5; /*Color de fondo*/
+}
+
+/*Estilo del elemento con la clase contenedor que contiene la página*/
+.contenedor {
+    width: 100%; /*Ancho*/
+    margin: auto; /*Margen centrado*/
+}
+
+/*Estilos generales de las partes en las que se divide la página según su clase*/
+.cabecera, .contenido, .pie {
+    width: 100%; /*Ancho*/
+    text-align: center; /*Alineación del texto centrada*/
+}
+
+/*Estilo del elemento con la clase contenido*/
+.contenido {
+    width: 70vw; /*Ancho*/
+    min-height: 71.65vh; /*Altura mínima*/
+    margin: auto; /*Margen centrado*/
+    margin-bottom: 3%; /*Margen inferior para que tenga una separación con el pie*/
+}
+
+/*Estilos que comparten los elementos con las clases cabecera y pie*/
+.cabecera, .pie {
+    background-color: #2A7E3B; /*Color de fondo*/
+    color: #B2DDB5; /*Color del texto*/
+    position: relative; /*Posición relativa*/
+}
+
+/*Estilo de la cabecera*/
+.cabecera {
+    padding: 10px 0; /*Padding inferior y superior a 10px, laterales a 0*/
+}
+
+/*Estilo que comparten los elementos logo, selector de idioma, título y cuenta*/
+.logo, .select_leng, .perfil, .titulo {
+    display: inline-block; /*Bloque en línea*/
+    margin: 0 10px; /*Margenes inferior y superior a 0 y laterales a 10px*/
+    vertical-align: middle; /*Centrados verticalmente*/
+}
+
+/*Estilo del elemento con la clase logo*/
+.logo {
+    position: absolute; /*Posición absoluta*/
+    left: 10px; /*Izquierda a 10px*/
+    width: 300px; /*Ancho*/
+}
+
+/*Estilo de la imagen del logo*/
+.logo img {
+    width: 30%;/*Ancho*/
+}
+
+/*Estilo del elemento con la clase titulo*/
+.titulo {
+    width: 40%;/*Ancho*/
+    font-size: 25px; /*Tamaño de la fuente*/
+    padding-left: 15%; /*Padding*/
+}
+
+/*Estilo del encabezado de primer nivel de la clase titulo*/
+.titulo h1 {
+    margin: 2.5% 0; /*Margen superior e inferior a 2.5% y laterales a 0*/
+    cursor: default; /*Cursor por defecto*/
+}
+
+/*Estilo del elemento con la clase select_leng*/
+.select_leng {
+    position: relative; /*Posición relativa*/
+    width: 150px; /* Ajusta el ancho según sea necesario */
+    cursor: pointer; /*Cambio del cursor sobre el elemento*/
+    color: #2A7E3B; /*Color de la letra*/
+    left: 5%; /*Posición sobre la izquierda*/
+}
+
+/*Estilo del elemento del selector de lenguaje la parte por defecto con la clase opcion_defecto*/
+.opcion_defecto {
+    position: relative; /*Posición relativa*/
+    width: 100%; /*Ancho*/
+    height: 50px; /*Alto*/
+    background-color: #ffffff; /*Color de fondo*/
+    font-size: 20px; /*Tamaño de fuente*/
+    padding-left: 50px; /*Padding izquierdo*/
+    padding-right: 0px; /*Padding derecho*/
+    box-sizing: border-box; /*Box sizing*/
+}
+
+/*Estilo de las imagenes con la clase img_leng*/
+.img_leng {
+    position: absolute; /*Posición absoluta*/
+    top: 50%; /*Posición sobre la parte superior*/
+    left: 10px; /*Posición sobre la parte izquierda*/
+    transform: translateY(-50%); /*Trasladar respecto el eje y*/
+    width: 30px; /*Ancho*/
+}
+
+/*Estilo del label del elemento con la clase opcion_defecto*/
+.opcion_defecto label { 
+    position: absolute; /*Posición absoluta*/
+    top: 50%; /*Posición desde la zona superior*/
+    left: 60px; /*Posición desde la izquierda*/
+    transform: translateY(-50%); /*Trasladar respecto al eje y*/
+}
+
+/*Estilo del elemento con la clase flecha*/
+.flecha {
+    position: absolute; /*Posición absoluta*/
+    top: 50%; /*Posición desde la zona superior*/
+    right: 0px; /* Ajuste desde el borde derecho */
+    padding: 10% 5px; /*Padding*/
+    transform: translateY(-50%);/*Trasladar respecto al eje y*/
+    background-color: #B2DDB5;/*Color de fondo*/
+    color: #2A7E3B; /*Color*/
+    width: 25px; /*Ancho*/
+    font-size: 18px; /*Tamaño de la fuente*/
+}
+
+/*Estilo de los elementos con la clase opciones*/
+.opciones {
+    display: none; /*Hacemos que no sea visible*/
+    list-style: none; /*Quiamos el estilo de la lista*/
+    position: absolute; /*Posición absoluta*/
+    top: 70%; /*Posición desde arriba*/
+    left: 0; /*Posición desde la izquierda*/
+    width: 100%; /*Ancho*/
+    background-color: #ffffff; /*Color de fondo*/
+    box-sizing: border-box; /*Box sizing*/
+    z-index: 1; /*Posición respecto las capas*/
+    padding: 0; /*Padding*/
+}
+
+/*Estilo de los li de la clase opciones*/
+.opciones li {
+    width: 100%; /*Ancho*/
+    padding: 10px; /*Padding*/
+    cursor: pointer; /*Cursor*/
+    background-color: #ffffff;/*Color de fondo*/
+    position: relative; /*Posición relativa*/
+    box-sizing: border-box; /*Box sizing*/
+    text-align: left; /*Texto alineado a la izquierda*/
+}
+
+/*Estilo al pasar por los aneriores li*/
+.opciones li:hover {
+    background-color: #B2DDB5;/*Color de fondo*/
+}
+
+/*Estilo de los label dentro del li dentro de la clase opciones*/
+.opciones>li>label {
+    margin-left: 45px; /*Margen*/
+}
+
+/*Al pasar por encima de los anteriores*/
+.opciones>li>label:hover{
+    cursor: pointer;/*Cursor*/
+}
+
+/*Estilo de la clase opciones cuando se pasa sobre el elemento con la clase select_leng*/
+.select_leng:hover .opciones {
+    display: block;
+}
+
+/*Estilo del elemento con la clase perfil*/
+.perfil {
+    position: relative;/*Posición realativa*/
+    top: 10%; /*Posición desde la parte superior*/
+    right: -10%; /*Posición desde la derecha*/
+    border-radius: 50%; /*Borde redondeado*/
+    width: 90px; /*Ancho*/
+    height: 90px; /*Alto*/
+    cursor: pointer; /*Cursor*/
+    border: 3px solid #65BA74; /*Borde*/
+}
+
+/*Estilo de la lista desordenada dentro de la clase perfil*/
+.perfil ul {
+    list-style: none;/*Quitamos el estilo de la lista*/
+    padding: 0; /*Padding*/
+    margin: 0; /*Margen*/
+}
+
+/*Estilo del elemento con id opciones_perfil dentro de la clase perfil*/
+.perfil #opciones_perfil {
+    opacity: 0; /*Opacidad a 0*/
+    position: absolute; /*Posición absoluta*/
+    top: 100%;/*Posición desde arriba*/
+    left: -27%; /*Posición desde la izquierda*/
+    cursor: pointer; /*Cursor*/
+    background-color: #ffffff; /*Color de fondo*/
+    margin: auto;
+}
+
+/*Estilo de la imagen dentro de la clase perfil*/
+.perfil img {
+    width: 90px; /*Ancho*/
+    height: 90px; /*Alto*/
+    border-radius: 50%; /*Borde redondeado*/
+}
+
+/*Estilo del elmento con id opciones_perfil al pasar sobre la lista dentro de la clase perfil*/
+.perfil li:hover #opciones_perfil {
+    opacity: 1; /*Opacidad a 1*/
+    top: 113%; /*Posición desde arriba*/
+    right: 30%;/*Posición desde la derecha*/
+    width: 200%; /*Ancho*/
+    height: 300%;/*Alto*/
+}
+
+/*Estilo de los li dentro del elemento con id opciones_perfil*/
+#opciones_perfil li {
+    background-color: #65BA74; /*Colro de fondo*/
+    color: #2A7E3B; /*Color de texto*/
+    margin-bottom: 3%; /*Margen inferior*/
+    padding: 15% 5%; /*Padding*/
+    position: relative; /*Posición relativa*/
+}
+
+/*Estilo al pasar sobre el anterior*/
+#opciones_perfil li:hover {
+    background-color: #B2DDB5; /*Color de fondo*/
+}
+
+/*Estlo de las imagenes de los li dentro del elemnto con id opciones_perfil*/
+#opciones_perfil li img {
+    position: absolute; /*Posición absoluta*/
+    width: 20px; /*Ancho*/
+    height: 20px;/*Alto*/
+    top: 30%;/*Posición desde arriba*/
+    left: 7%; /*Posición desde la izquierda*/
+}
+
+/*Estilo de los enlaces de los li dentro del elemnto con id opciones_perfil*/
+#opciones_perfil li a {
+    position: absolute; /*Posición absoluta*/
+    color: #2A7E3B; /*Color*/
+    text-decoration: none; /*Texto sin subrayado*/
+    left: 23%; /*Posición desde la izquierda*/
+    top: 30%; /*Posición desde la derecha*/
+    margin-bottom: 70%; /*Margen inferior*/
+    font-size: 18px; /*Tamaño de la fuente*/
+}
+
+/*Estilo del formulario de búsqueda*/
+.form_busqueda {
+    width: 70vw;/*Ancho*/
+    margin: 3% auto; /*Margen*/
+    margin-bottom: 3%; /*Margen inferior*/
+}
+
+/*Estilo del input de tipo text del formulario de búsqueda*/
+.form_busqueda input[type="text"] {
+    width: 23vw;/*Ancho*/
+    padding: 5px;/*Padding*/
+}
+
+/*Estilo del input con id buscar*/
+#buscar {
+    background-image: url(../img/lupa.svg);/*Imagen de fondo*/
+}
+
+/*Estilo del input con id filtrar*/
+#filtrar {
+    margin: 0 1%; /*Margen*/
+    background-image: url(../img/filtro.svg);/*Imagen de fondo*/
+}
+
+/*Estilo que comparten los anteriores*/
+#buscar, #filtrar{
+    background-repeat: no-repeat; /*La imagen no se repite*/
+    background-position: 10px center; /*Posición de la imagen*/
+    padding-left: 40px; /*Padding*/
+    height: 30px; /*Alto*/
+}
+
+/*Estilo del botón del formulario de búsqueda*/
+.form_busqueda input[type="submit"] {
+    padding: 13px 10px;/*Padding*/
+    width: 15vw; /*Ancho*/
+}
+
+/*Estilo de los input que no sea de tipo checkbox y de los textarea además de sus placeholder*/
+input:not([type="checkbox"]), input::placeholder, textarea, textarea::placeholder {
+    border-radius: 10px; /*Borde redondeado*/
+    border: 0px; /*Borde a 0px*/
+    background-color: #F5FBF5;/*Color de fondo*/
+    color: #B2DDB5; /*Color*/
+    outline: none; /*Sin borde interior*/
+}
+
+/*Estilo de los input de tipo text, email y los textarea*/
+input[type="text"], input[type="email"], textarea {
+    color: #2A7E3B;/*Color*/
+}
+
+/*Estilo de los anteriores al estar centrados en ellos*/
+input[type="text"]:focus, input[type="email"]:focus, textarea:focus {
+    border: 2px solid #2A7E3B;/*Borde*/
+}
+
+/*Estilo de los botones*/
+input[type="submit"] {
+    background-color: #2A7E3B;/*Color de fondo*/
+}
+
+/*Estilo de los botones al pasar por encima*/
+input[type="submit"]:hover {
+    background-color: #65BA74;/*Colro de fondo*/
+    cursor: pointer; /*Cursor*/
+}
+
+/*Estilo de los botones al pulsar sobre ellos*/
+input[type="submit"]:active {
+    background-color: #203C25;/*Color de fondo*/
+}
+
+/*Estilo de los botones deshabilitados*/
+input:disabled {
+    background-color: #C9E8CA;/*Color de fondo*/
+    color: #ffffff;/*Color*/
+}
+
+/*Estilo del elemento con la clase cards*/
+.cards {
+    text-align: left;/*Alineación a la izquierda*/
+    margin: 0.5vh 0; /*Margen*/
+    padding-left: 0.5%; /*Padding izquierdo*/
+}
+
+/*Estilo de los elementos con clas card*/
+.card {
+    width: 16vw;/*Ancho*/
+    height: 35vh;/*Alto*/
+    margin: 0.5vw;/*Margen*/
+    border: 2px solid #203C25;/*Borde*/
+    display: inline-block;/*Bloque en linea*/
+    text-align: center; /*Texto centrado*/
+    border-radius: 10%; /*Borde redondeado*/
+    box-sizing: border-box;/*Box sizing*/
+    overflow: hidden; /*Sin barras de scroll*/
+    position: relative;/*Posición relativa*/
+    background-color: #ffffff; /*Color de fondo*/
+    color: #2A7E3B; /*Color*/
+    box-shadow: 0px 0px 10px 3px #203C25;/*Sombra*/
+}
+
+/*Estilo de las imágenes dentro de los elementos con la clase card*/
+.card img {
+    width: 100%;/*Ancho*/
+    height: 50%;/*Alto*/
+    object-fit: cover;/*Escala la imagen*/
+}
+
+/*Estilo de los anteriores al pasar por encima*/
+.card img:hover {
+    cursor: pointer;/*Cursor*/
+}
+
+/*Al pulsarlos*/
+.card img:active {
+    transform: scale(1.2);/*Aumenta la escala de la imagen*/
+}
+
+/*Encabezados de 3º nivel dentro de la clase card*/
+.card h3 {
+    width: 80%;/*Ancho*/
+    height: 13%;/*Alto*/
+    overflow: hidden;/*Sin scroll*/
+    margin: 3% auto;/*Margen*/
+    margin-bottom: 0;/*Margen inferior*/
+    color: #203C25; /*Color*/
+}
+
+/*Estilod el primer elemento párrafo dentro de card*/
+.card p:first-of-type {
+    width: 80%;/*Ancho*/
+    height: 2.25em;/*Alto*/
+    overflow: hidden;/*Sin scroll*/
+    text-align: left;/*Alineación del texto*/
+    margin-left: 5%;/*Margen izquierdo*/
+    margin-top: 0%;/*Margen superior*/
+}
+
+/*Elementos con la clase rating*/
+.rating {
+    width: 60%;/*Ancho*/
+    font-size: 30px;/*Tamaño de la fuente*/
+    color: #203C25;/*Color*/
+    cursor: pointer;/*Cursor*/
+    position: absolute; /*Posición absoluta*/
+    left: 0%;/*Posición desde la izquierda*/
+    bottom: 3%;/*Posición desde la derecha*/
+}
+
+/*Estilo de los elemento con la clase star al pasar por encima y al tener la clase selected*/
+.star:hover, .star.selected {
+    color: #dfec2f;/*Color*/
+}
+
+/*Estilo de los párrafos dentro de la clase rating*/
+.rating p {
+    position: absolute;/*Posición absoluta*/
+    left: 95%;/*Izquierda*/
+    bottom: -20%;/*Abajo*/
+    font-size: 18px;/*Tamaño de fuente*/
+    height: 43%;/*Alto*/
+}
+
+/*Estilo del elemento con la clase fav*/
+.fav {
+    display: none;/*No visible*/
+}
+
+/*Estilo de los elemento con la clase fav-c*/
+.fav-c {
+    font-size: 30px;/*Tamaño de fuente*/
+    cursor: pointer;/*Cursor*/
+    color: #203C25;/*Color*/
+    position: absolute;/*Posición absoluta*/
+    right: 10%;/*Derecha*/
+    bottom: 2%;/*Abajo*/
+}
+
+/*Estilo del elemento con clase fav-c si es hermano del elemento con clase fav que está checkeado*/
+.fav:checked + .fav-c {
+    color: #4b60ce;/*Color*/
+    transform: scale(1.2); /*Escala*/
+}
+
+/*Estilo del formulario de incidentes*/
+.form-incidencia {
+    width: 67vw;/*Ancho*/
+    margin: 20px auto; /*Margen*/
+    padding: 10px;/*Padding*/
+    color: #203C25;/*Color*/
+}
+
+/*Estilo de los textarea*/
+textarea{
+    resize: none;/*Hacer que no se pueda reajustar el tamaño*/
+    height: 20vh;/*Alto*/
+}
+
+/*Estilo de los inputs y textarea del elemento con la clase form-incidencia*/
+.form-incidencia input, .form-incidencia textarea{
+    width: 20%; /*Ancho*/
+    padding: 1.15% 1%;/*Padding*/
+    margin-bottom: 1%;/*Margen inferior*/
+}
+
+/*Estilo del botón tipo submit dentro de form-incidencia*/
+.form-incidencia input[type="submit"]{
+    width: 22.15%;/*Ancho*/
+}
+
+/*Estilo del encabezado de 2º nivel del formulario de incidencia*/
+.form-incidencia h2{
+    font-size: 35px;/*Tamaño de la fuente*/
+    font-variant: small-caps;/*Versalitas*/
+    letter-spacing: 0.2em;/*Espacio entre letras*/
+}
+
+/*Estilo de varias selecciones*/
+h1::selection, h2::selection, h3::selection, label::selection, input::selection, img::selection, a::selection, textarea::selection, p::selection,
+span::selection, div::selection{
+    background-color: transparent;/*Color de fondo*/
+}
+
+/*Estilo del pie de página*/
+.pie {
+    padding: 10px 0;/*Padding*/
+    margin-bottom: 0;/*Margen inferior*/
+}
+
+/*Párrafo dentro de la clase pie*/
+.pie p {
+    display: inline-block;/*Bloque en línea*/
+    font-size: 19px;/*Tamaño de la fuente*/
+}
+
+/*Primer párrafo hijo de la clase pie*/
+.pie p:nth-child(1) {
+    position: absolute;/*Posición absoluta*/
+    left: 25%;/*Izquierda*/
+}
+
+/*Tercer párrafo hijo de la clase pie*/
+.pie p:nth-child(3){
+    position: absolute;/*Posición absoluta*/
+    right: 25%;/*Derecha*/
+}
+

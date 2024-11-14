@@ -1,0 +1,321 @@
+<!DOCTYPE html>
+    <html lang="es">
+        <!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>VillaVera</title>
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/index.js" defer></script>
+</head>
+<body>
+    <div class="contenedor">
+
+        <!--Cabecera-->
+        <div class="cabecera">
+            <!--Logo-->
+            <div class="logo"><a href="#"><img src="img/logo.svg" alt="Logo"/></a></div>
+            <!--Titulo-->
+            <div class="titulo"><h1>VILLAVERA</h1></div>
+            <!--Selector de lenguage-->
+            <div class="select_leng">
+                <div class="opcion_defecto">
+                    <img src="img/lang/esp.svg" class="img_leng" /> <label>ES</label>
+                    <span class="flecha">▼</span>
+                </div>
+                <ul class="opciones">
+                    <li>
+                        <img src="img/lang/esp.svg" class="img_leng"/> <label>ES</label>
+                    </li>
+                    <li>
+                        <img src="img/lang/ing.svg" class="img_leng"/><label>EN</label>
+                    </li>
+                    <li>
+                        <img src="img/lang/fran.svg" class="img_leng"/><label>FR</label>
+                    </li>
+                    <li>
+                        <img src="img/lang/al.svg" class="img_leng"/><label>AL</label>
+                    </li>
+                    <li>
+                        <img src="img/lang/por.svg" class="img_leng"/><label>PR</label>
+                    </li>
+                </ul>
+            </div>
+            <!--Cuenta-->
+            <div class="perfil">
+                <ul>
+                    <li id="foto_p">
+                        <img src="img/user.png" alt="Cuenta">
+                        <ul id="opciones_perfil">
+                            <li value="conf"><img src="img/perfil/config.svg"/><a href="#">Configuración</a></li>
+                            <li value="fav"><img src="img/perfil/fav.svg"/><a href="#">Favoritos</a></li>
+                            <li value="tema"><img src="img/perfil/theme.svg"/><a href="#">Tema</a></li>
+                            <li value="incidencia"><img src="img/perfil/inci.svg"/><a href="./html/incidencia.html">Incidencia</a></li>
+                            <li value="cerrar_sesion"><img src="img/perfil/exit.svg"/><a href="#">Cerrar sesión</a></li>
+                        </ul>
+                    </li>
+                </ul>
+                
+            </div>
+        </div>
+
+        <!--Contenido-->
+        <div class="contenido">
+            <!-- ormulario de búsqueda y filtrado-->
+            <div class="form_busqueda">
+                <form>
+                    <input type="text" id="buscar" placeholder="Buscar...">
+                    <input type="text" id="filtrar" placeholder="Filtrar">
+                    <input type="submit" value="Aplicar filtro">
+                </form>
+            </div>
+
+            <!--Tarjetas de la web-->
+            <div class="cards">
+                <!--Tarjeta 1-->
+                <div class="card">
+                    <img src="img/imagen.png" alt="Imagen">
+                    <h3>Título del sitio</h3>
+                    <p>Descripción del sitio</p>
+                    <div class="rating">
+                        <span class="star" data-value="1">&#9733;</span>
+                        <span class="star" data-value="2">&#9733;</span>
+                        <span class="star" data-value="3">&#9733;</span>
+                        <span class="star" data-value="4">&#9733;</span>
+                        <span class="star" data-value="5">&#9733;</span>
+                        <p id="rating1">4.0</p> 
+                    </div>
+                    <input type="checkbox" id="fav1" class="fav">
+                    <label for="fav1" class="fav-c">❤</label>
+                </div>
+                <!--Tarjeta 2-->
+                <div class="card">
+                    <img src="img/imagen.png" alt="Imagen">
+                    <h3>Título del sitio</h3>
+                    <p>Consequatur autem nostrum reiciendis et in laborum dolores ratione. Aut consequatur quia eius itaque. Qui maxime dolor magni reiciendis quis earum hic. Dicta repellat exercitationem aperiam itaque iure ullam enim nam. Est ad molestiae officiis. Eligendi molestiae dolores similique aliquam doloribus vero reprehenderit.</p>
+                    <div class="rating">
+                        <span class="star" data-value="1">&#9733;</span>
+                        <span class="star" data-value="2">&#9733;</span>
+                        <span class="star" data-value="3">&#9733;</span>
+                        <span class="star" data-value="4">&#9733;</span>
+                        <span class="star" data-value="5">&#9733;</span>
+                        <p id="rating2">4.0</p> 
+                    </div>
+                    <input type="checkbox" id="fav2" class="fav">
+                    <label for="fav2" class="fav-c">❤</label>
+                </div>
+                <!--Tarjeta 3-->
+                <div class="card">
+                    <img src="img/imagen.png" alt="Imagen">
+                    <h3>Título del sitio</h3>
+                    <p>Descripción del sitio</p>
+                    <div class="rating">
+                        <span class="star" data-value="1">&#9733;</span>
+                        <span class="star" data-value="2">&#9733;</span>
+                        <span class="star" data-value="3">&#9733;</span>
+                        <span class="star" data-value="4">&#9733;</span>
+                        <span class="star" data-value="5">&#9733;</span>
+                        <p id="rating3">4.0</p> 
+                    </div>
+                    <input type="checkbox" id="fav3" class="fav">
+                    <label for="fav3" class="fav-c">❤</label>
+                </div>
+                <!--Tarjeta 4-->
+                <div class="card">
+                    <img src="img/imagen.png" alt="Imagen">
+                    <h3>Título del sitio</h3>
+                    <p>Descripción del sitio</p>
+                    <div class="rating">
+                        <span class="star" data-value="1">&#9733;</span>
+                        <span class="star" data-value="2">&#9733;</span>
+                        <span class="star" data-value="3">&#9733;</span>
+                        <span class="star" data-value="4">&#9733;</span>
+                        <span class="star" data-value="5">&#9733;</span>
+                        <p id="rating4">4.0</p> 
+                    </div>
+                    <input type="checkbox" id="fav4" class="fav">
+                    <label for="fav4" class="fav-c">❤</label>
+                <!--Tarjeta 5-->
+                </div>
+                <div class="card">
+                    <img src="img/imagen.png" alt="Imagen">
+                    <h3>Título del sitio</h3>
+                    <p>Descripción del sitio</p>
+                    <div class="rating">
+                        <span class="star" data-value="1">&#9733;</span>
+                        <span class="star" data-value="2">&#9733;</span>
+                        <span class="star" data-value="3">&#9733;</span>
+                        <span class="star" data-value="4">&#9733;</span>
+                        <span class="star" data-value="5">&#9733;</span>
+                        <p id="rating5">4.0</p> 
+                    </div>
+                    <input type="checkbox" id="fav5" class="fav">
+                    <label for="fav5" class="fav-c">❤</label>
+                </div>
+                <!--Tarjeta 6-->
+                <div class="card">
+                    <img src="img/imagen.png" alt="Imagen">
+                    <h3>Título del sitio</h3>
+                    <p>Descripción del sitio</p>
+                    <div class="rating">
+                        <span class="star" data-value="1">&#9733;</span>
+                        <span class="star" data-value="2">&#9733;</span>
+                        <span class="star" data-value="3">&#9733;</span>
+                        <span class="star" data-value="4">&#9733;</span>
+                        <span class="star" data-value="5">&#9733;</span>
+                        <p id="rating6">4.0</p> 
+                    </div>
+                    <input type="checkbox" id="fav6" class="fav">
+                    <label for="fav6" class="fav-c">❤</label>
+                </div>
+                <!--Tarjeta 7-->
+                <div class="card">
+                    <img src="img/imagen.png" alt="Imagen">
+                    <h3>Título del sitio</h3>
+                    <p>Descripción del sitio</p>
+                    <div class="rating">
+                        <span class="star" data-value="1">&#9733;</span>
+                        <span class="star" data-value="2">&#9733;</span>
+                        <span class="star" data-value="3">&#9733;</span>
+                        <span class="star" data-value="4">&#9733;</span>
+                        <span class="star" data-value="5">&#9733;</span>
+                        <p id="rating7">4.0</p> 
+                    </div>
+                    <input type="checkbox" id="fav7" class="fav">
+                    <label for="fav7" class="fav-c">❤</label>
+                </div>
+                <!--Tarjeta 8-->
+                <div class="card">
+                    <img src="img/imagen.png" alt="Imagen">
+                    <h3>Título del sitio</h3>
+                    <p>Descripción del sitio</p>
+                    <div class="rating">
+                        <span class="star" data-value="1">&#9733;</span>
+                        <span class="star" data-value="2">&#9733;</span>
+                        <span class="star" data-value="3">&#9733;</span>
+                        <span class="star" data-value="4">&#9733;</span>
+                        <span class="star" data-value="5">&#9733;</span>
+                        <p id="rating8">4.0</p> 
+                    </div>
+                    <input type="checkbox" id="fav8" class="fav">
+                    <label for="fav8" class="fav-c">❤</label>
+                </div>
+                <!--Tarjeta 9-->
+                <div class="card">
+                    <img src="img/imagen.png" alt="Imagen">
+                    <h3>Título del sitio</h3>
+                    <p>Descripción del sitio</p>
+                    <div class="rating">
+                        <span class="star" data-value="1">&#9733;</span>
+                        <span class="star" data-value="2">&#9733;</span>
+                        <span class="star" data-value="3">&#9733;</span>
+                        <span class="star" data-value="4">&#9733;</span>
+                        <span class="star" data-value="5">&#9733;</span>
+                        <p id="rating9">4.0</p> 
+                    </div>
+                    <input type="checkbox" id="fav9" class="fav">
+                    <label for="fav9" class="fav-c">❤</label>
+                </div>
+                <!--Tarjeta 10-->
+                <div class="card">
+                    <img src="img/imagen.png" alt="Imagen">
+                    <h3>Título del sitio</h3>
+                    <p>Descripción del sitio</p>
+                    <div class="rating">
+                        <span class="star" data-value="1">&#9733;</span>
+                        <span class="star" data-value="2">&#9733;</span>
+                        <span class="star" data-value="3">&#9733;</span>
+                        <span class="star" data-value="4">&#9733;</span>
+                        <span class="star" data-value="5">&#9733;</span>
+                        <p id="rating10">4.0</p> 
+                    </div>
+                    <input type="checkbox" id="fav10" class="fav">
+                    <label for="fav10" class="fav-c">❤</label>
+                </div>
+                <!--Tarjeta 11-->
+                <div class="card">
+                    <img src="img/imagen.png" alt="Imagen">
+                    <h3>Título del sitio</h3>
+                    <p>Descripción del sitio</p>
+                    <div class="rating">
+                        <span class="star" data-value="1">&#9733;</span>
+                        <span class="star" data-value="2">&#9733;</span>
+                        <span class="star" data-value="3">&#9733;</span>
+                        <span class="star" data-value="4">&#9733;</span>
+                        <span class="star" data-value="5">&#9733;</span>
+                        <p id="rating11">4.0</p> 
+                    </div>
+                    <input type="checkbox" id="fav11" class="fav">
+                    <label for="fav11" class="fav-c">❤</label>
+                </div>
+                <!--Tarjeta 12-->
+                <div class="card">
+                    <img src="img/imagen.png" alt="Imagen">
+                    <h3>Título del sitio</h3>
+                    <p>Descripción del sitio</p>
+                    <div class="rating">
+                        <span class="star" data-value="1">&#9733;</span>
+                        <span class="star" data-value="2">&#9733;</span>
+                        <span class="star" data-value="3">&#9733;</span>
+                        <span class="star" data-value="4">&#9733;</span>
+                        <span class="star" data-value="5">&#9733;</span>
+                        <p id="rating12">4.0</p> 
+                    </div>
+                    <input type="checkbox" id="fav12" class="fav">
+                    <label for="fav12" class="fav-c">❤</label>
+                </div>
+                <!--Tarjeta 13-->
+                <div class="card">
+                    <img src="img/imagen.png" alt="Imagen">
+                    <h3>Título del sitio</h3>
+                    <p>Descripción del sitio</p>
+                    <div class="rating">
+                        <span class="star" data-value="1">&#9733;</span>
+                        <span class="star" data-value="2">&#9733;</span>
+                        <span class="star" data-value="3">&#9733;</span>
+                        <span class="star" data-value="4">&#9733;</span>
+                        <span class="star" data-value="5">&#9733;</span>
+                        <p id="rating13">4.0</p> 
+                    </div>
+                    <input type="checkbox" id="fav13" class="fav">
+                    <label for="fav13" class="fav-c">❤</label>
+                </div>
+                <!--Tarjeta 14-->
+                <div class="card">
+                    <img src="img/imagen.png" alt="Imagen">
+                    <h3>Título del sitio</h3>
+                    <p>Descripción del sitio</p>
+                    <div class="rating">
+                        <span class="star" data-value="1">&#9733;</span>
+                        <span class="star" data-value="2">&#9733;</span>
+                        <span class="star" data-value="3">&#9733;</span>
+                        <span class="star" data-value="4">&#9733;</span>
+                        <span class="star" data-value="5">&#9733;</span>
+                        <p id="rating14">4.0</p> 
+                    </div>
+                    <input type="checkbox" id="fav14" class="fav">
+                    <label for="fav14" class="fav-c">❤</label>
+                </div>
+            </div>
+
+            
+        </div>
+
+        <!--Pie de página-->
+        <div class="pie">
+            <p>
+                &copy; 2024 VillaVera
+            </p>
+            <p>
+                Email: email@email.com
+            </p> 
+            <p>
+                Teléfono: 987 65 43 21
+            </p>
+        </div>
+
+    </div>
+</body>
+</html>
+
