@@ -226,6 +226,7 @@ body {
 #opciones_perfil li:hover {
     transform: scale(1.1); /*Aumentar escala*/
     margin-bottom: 5%; /*Margen inferior*/
+    margin-top: 5%; /*Margen superior*/
 }
 
 /*Estlo de las imagenes de los li dentro del elemnto con id opciones_perfil*/
