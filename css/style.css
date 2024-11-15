@@ -223,7 +223,7 @@ body {
 
 /*Estilo al pasar sobre el anterior*/
 #opciones_perfil li:hover {
-    background-color: #B2DDB5; /*Color de fondo*/
+    transform: scale(1.1); /*Aumentar escala*/
 }
 
 /*Estlo de las imagenes de los li dentro del elemnto con id opciones_perfil*/
