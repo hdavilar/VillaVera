@@ -219,11 +219,13 @@ body {
     margin-bottom: 3%; /*Margen inferior*/
     padding: 15% 5%; /*Padding*/
     position: relative; /*Posición relativa*/
+    transition: margin 0.3s;/*Transición del margen*/
 }
 
 /*Estilo al pasar sobre el anterior*/
 #opciones_perfil li:hover {
     transform: scale(1.1); /*Aumentar escala*/
+    margin-bottom: 5%; /*Margen inferior*/
 }
 
 /*Estlo de las imagenes de los li dentro del elemnto con id opciones_perfil*/
